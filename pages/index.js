@@ -94,6 +94,14 @@ const Home = () => {
           )}
         </div>
       </div>
+      <div className="email-footer">
+        <a 
+          href="https://bio.link/barrettolafson"
+          target="_blank"
+        >
+          bio.link/barrettolafson
+        </a>
+      </div>
       <div className="badge-container grow">
         <a
           href="https://buildspace.so/builds/ai-writer"
