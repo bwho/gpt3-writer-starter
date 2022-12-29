@@ -12,6 +12,7 @@ Write a step-by-step recipe that is plant-based and includes at least one of the
 
 Ingredients:
 `;
+
 const generateAction = async (req, res) => {
   // Run first prompt
   const baseCompletion = await openai.createCompletion({
