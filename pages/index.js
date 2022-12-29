@@ -29,6 +29,13 @@ const Home = () => {
 
     setApiOutput(`${output.text}`);
     setIsGenerating(false);
+
+    var element = document.getElementById("output-id");
+    element.scrollIntoView({
+      behavior:"smooth",
+      block: "end",
+      inline:"nearest"
+    });
   }
 
   const onUserChangedVeggieText = (event) => {
@@ -81,7 +88,7 @@ const Home = () => {
             </a>
           </div>
           {apiOutput && (
-            <div className="output">
+            <div className="output" id="output-id">
               <div className="output-header-container">
                 <div className="output-header">
                   <h3>Your Custom Recipe</h3>
